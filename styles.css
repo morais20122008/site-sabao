@@ -1,0 +1,104 @@
+@import url("styles/header.css");
+
+:root {
+    --cor-de-fundo: #ffffff;
+    --cabecalho: #86b499;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+}
+.cabeçalho__menu-hamburguer {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+    background-image: url("img/Menu.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cabeçalho {
+    background-color: var(--cabecalho);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.container__imagem {
+    padding: 1em;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+}
+
+.foto-principal {
+    position: absolute;
+    top: 100px;
+    left: 80px;
+    width: 250px;
+}
+
+.seta {
+    position: absolute;
+    top: 180px;
+    left: 350px;
+  
+}
+
+.seta2 {
+    position: absolute;
+    top: 180px;
+    left: 18px;
+  
+}
+.main { 
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    padding: 3em;
+ 
+}
+.galery {
+    height: 35vw;
+    width: 60vw;
+    background-color: black;
+    overflow: hidden;
+}
+
+.galery .fotos {
+    width: 500%;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.galery .fotos img {
+    width: 19.9%;
+}
+
+.barra-de-pesquisa{
+    position: absolute;
+    top: 18px;
+    left: 550px;
+    width: 200px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #86b499;
+}
+
+@media (max-width: 900px){
+    .barra-de-pesquisa{
+        position: absolute;
+        top: 13px;
+        left: 110px;
+        width: 170px;
+    } 
+}
